@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.
 
 @SpringBootApplication
+@ComponentScan(basePackages={"aetna.com.aetna"})
+@RestController
+@EnableAutoConfiguration
 public class AetnaApplication {
 	
 @RequestMapping("/")
