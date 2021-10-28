@@ -6,15 +6,16 @@ import org.springframework.context.annotation.ComponentScan;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
-import org.springframework.web.bind.annotation.
+import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @ComponentScan(basePackages={"aetna.com.aetna"})
 @RestController
 @EnableAutoConfiguration
 public class AetnaApplication {
-	
-@RequestMapping("/")
+
+
+ @RequestMapping("/")
     String home() {
         return "Welcome to Aetna USA!";
     }
